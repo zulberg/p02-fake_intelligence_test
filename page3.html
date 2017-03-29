@@ -10,7 +10,8 @@
   <body id="page3">
     <nav>
       <div class="sample">
-        <h1>This is the third page of the test.</h1>
+        <h1>This is the third and final page of the test.  These problems are similar to the
+          problems on the previous two pages, but the logic is different again.</h1>
       </div>
     </nav>
     <h2>Here are some samples:</h2>
@@ -21,4 +22,53 @@
     <li>14, 9 = 126523</li>
     <li>15, 8 = 120723</li>
   </ul>
-  
+  <!--The following code has been used courtesy of w3schools (w3schools.com) and CINS 110 classwork,
+  with modifications from myself -->
+    <div class="row">
+      <div class="form-group" id="answerGroup">
+        <label>13, 7 =</label>
+        <div class="col-sm-2">
+          <input type="text" id="answer1" class="form-control input-md">
+          <span id="answerError" class="control-label">
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-primary col-sm-1"
+          onclick="testAnswer5();">
+          Check
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>18, 12 =</label>
+        <div class="col-sm-2">
+          <input type="text" id="answer2" class="form-control input-md">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-primary col-sm-1"
+          onclick="testAnswer6();">
+          Check
+        </button>
+      </div>
+    </div>
+    <div class="next">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button id="previousbutton" type="button" class="btn btn-primary" onclick="prevPage2();">Previous
+        </button>
+      </div>
+    </div>
+    <div class="next">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button id="continuebutton" type="button" class="btn btn-primary" onclick="finalPage();">Continue
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

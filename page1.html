@@ -21,14 +21,14 @@
     <li>14, 7 = 72198</li>
     <li>15, 9 = 624135</li>
   </ul>
+  <!--The following code has been used courtesy of w3schools (w3schools.com) and CINS 110 classwork,
+  with modifications from myself -->
   <div class="row">
     <div class="form-group" id="answerGroup">
-      <label for="answer" class="col-sm-2 control-label">12, 4 =</label>
+      <label>12, 4 =</label>
       <div class="col-sm-2">
-        <input type="text" id="answer1" class="form-control input-md"
-            placeholder="myanswer" />
-        <span id="answerError" class="control-label hidden-message">
-          Error placeholder (hidden)
+        <input type="text" id="answer1" class="form-control input-md">
+        <span id="answerError" class="control-label">
         </span>
       </div>
     </div>
@@ -42,14 +42,10 @@
     </div>
   </div>
   <div class="row">
-    <div class="form-group" id="answerGroup">
-      <label for="answer" class="col-sm-2 control-label">16, 10 =</label>
+    <div class="form-group">
+      <label>16, 10 =</label>
       <div class="col-sm-2">
-        <input type="text" id="answer2" class="form-control input-md"
-            placeholder="myanswer" />
-        <span id="answerError" class="control-label hidden-message">
-          Error placeholder (hidden)
-        </span>
+        <input type="text" id="answer2" class="form-control input-md">
       </div>
     </div>
   </div>
@@ -61,15 +57,17 @@
       </button>
     </div>
   </div>
-  <div class="row">
+  <div class="next">
     <div class="col-sm-offset-2 col-sm-2">
       <button id="previousbutton" type="button" class="btn btn-primary" onclick="prevPage();">Previous
       </button>
     </div>
   </div>
-  <div class="row">
+  <div class="next">
     <div class="col-sm-offset-2 col-sm-2">
-      <button id="continuebutton" type="button" class="btn btn-primary" onclick="nextPage();">Continue
+      <button id="continuebutton" type="button" class="btn btn-primary" onclick="nextPage2();">Continue
       </button>
     </div>
   </div>
+  </body>
+</html>

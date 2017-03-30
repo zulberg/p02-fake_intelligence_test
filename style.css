@@ -1,3 +1,20 @@
-body {
-  background-color:
+#page0 {
+  background-color: violet;
+  font-family: "sans serif", Arial, Verdana;
+}
+#page1 {
+  background-color: #ffff66;
+  font-family: "sans serif", Arial, Verdana;
+}
+#page2 {
+  background-color: lightgreen;
+  font-family: "sans serif", Arial, Verdana;
+}
+#page3 {
+  background-color: lightskyblue;
+  font-family: "sans serif", Arial, Verdana;
+}
+#lastPage {
+  background-color: orange;
+  font-family: "sans serif", Arial, Verdana;
 }

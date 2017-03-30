@@ -24,40 +24,26 @@
   </ul>
   <!--The following code has been used courtesy of w3schools (w3schools.com) and CINS 110 classwork,
   with modifications from myself -->
-    <div class="row">
-      <div class="form-group" id="answerGroup">
-        <label>13, 7 =</label>
-        <div class="col-sm-2">
-          <input type="text" id="answer1" class="form-control input-md">
-          <span id="answerError" class="control-label">
-          </span>
-        </div>
+  <div class="row myinput-row">
+    <div class="form-group" id="answer5Group">
+      <label for="answer5" class="col-sm-2 control-label">13, 7 =</label>
+      <div class="col-sm-2">
+        <input type="text" id="answer5" class="form-control input-md"
+            placeholder="answer" />
+        <span id="answer5Error" class="control-label hidden-message">
+        </span>
       </div>
     </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="button" class="btn btn-primary col-sm-1"
-          onclick="testAnswer5();">
-          Check
-        </button>
-      </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="button" class="btn btn-primary col-sm-1"
+        onclick="testAnswer5();">
+        Check #5
+      </button>
     </div>
-    <div class="row">
-      <div class="form-group">
-        <label>18, 12 =</label>
-        <div class="col-sm-2">
-          <input type="text" id="answer2" class="form-control input-md">
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="button" class="btn btn-primary col-sm-1"
-          onclick="testAnswer6();">
-          Check
-        </button>
-      </div>
-    </div>
+  </div>
+
     <div class="next">
       <div class="col-sm-offset-2 col-sm-2">
         <button id="previousbutton" type="button" class="btn btn-primary" onclick="prevPage2();">Previous

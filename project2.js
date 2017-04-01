@@ -26,7 +26,7 @@ function testAnswer1() {
 var ans1=document.getElementById("answer1").value;
   if (isNaN(ans1) == true) {
     alert("You must enter a number.");
-  }
+  }k8
   if (ans1 == "81648") {
   document.getElementById("answer1Group").innerHTML="Correct";
   document.getElementById("answer1Group").classList.add("has-success");
@@ -68,11 +68,11 @@ function testAnswer3() {
   document.getElementById("answer3Error").classList.add("shown-message");
   }
 }
+var numCorrect=0;
 function storeAnswer() {
-  var numCorrect=0;
-  var ans1;
-  var ans2;
-  var ans3;
+  var ans1=document.getElementById("answer1").value;
+  var ans2=document.getElementById("answer2").value;
+  var ans3=document.getElementById("answer3").value;
   if (ans1= true){
     numCorrect=numCorrect+1;
   } else if (ans1=false && ans2=true) {
@@ -80,7 +80,7 @@ function storeAnswer() {
   } else if (!ans1 && !ans2 && ans3) {
     numCorrect=numCorrect+1;
   }
-  setCookie("TotalCorrect",numCorrect,1);
+  setCookie("totalCorrect",numCorrect,1);
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
@@ -103,4 +103,7 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+function closeWindow() {
+  finalPage.close();
 }

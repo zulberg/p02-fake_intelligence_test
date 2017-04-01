@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="project2.js"></script>
   </head>
-  <body id="lastPage">
+  <body id="lastPage" onload="storeAnswer()">
     <h1>Results Page</h1>
     <h2>This concludes the test.</h2>
-
+    <p id="result"></p>
+    <script>
+    document.getElementById("result").innerHTML="You scored "+numCorrect+" out of 3 questions.";
+    </script>
     <!--The following code has been used courtesy of w3schools (w3schools.com) and CINS 110 classwork,
     with modifications from myself -->
     <div class="row">
       <div class="col-sm-offset-2 col-sm-2">
         <button id="continuebutton" type="button" class="btn btn-primary" onclick="prevPage3();">Previous
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-2">
+        <button id="continuebutton" type="button" class="btn btn-primary" onclick="closeWindow()";>Exit
         </button>
       </div>
     </div>
